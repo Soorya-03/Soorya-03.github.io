@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>The Shoppies</title>
+	<link rel="stylesheet" href="MainPage.css">
+	<script src = "movie.js"></script>
+</head>
+<body>
+	<div id = "header">
+		<h1 id = "heading">OMDB Movie Awards</h1>
+	</div>
+	<h2 id = "banner"> Please Click Submit on the Nominations Panel to Finalize your Nominations.</h2> 
+	<div id = "searchPanel">
+		<input type = "text" placeholder = "Search for a Movie.." id = "searchBar">
+		<input type = "button" value = "Search" id = "searchB" onclick = "searchHandler()">
+		<div id  = "searchResults">
+		</div>
+	</div>
+	<div id = "nominationPanel">
+		<h2 id = "nominationHeader"> Your Nominations</h2>
+		<div id = "nominations">
+		</div>
+		<input type = "button" value = "Remove" id = "removeMovieB" onclick = "removeMovies()"> 
+		<input type = "button" value = "Submit" id = "submitMovieB" onclick = "submit()"> 
+	</div>
+</body>
+</html>
