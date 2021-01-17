@@ -3,7 +3,7 @@ let nominations = [];
 	Then, it generates HTML using the data recieved.
 */
 function getMovie(movieName){
-	req = new XMLHttpRequest();
+	req = new XMLHttpsRequest();
 			req.onreadystatechange = function() {
 				if(this.readyState==4 && this.status==200){
 					let result = JSON.parse(this.responseText);
