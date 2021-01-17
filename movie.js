@@ -36,7 +36,7 @@ function getMovie(movieName){
 					});
 				}
 			}
-			req.open("GET", "http://www.omdbapi.com/?apikey=2ff93414&type=movie&s="+movieName);
+			req.open("GET", "https://www.omdbapi.com/?apikey=2ff93414&type=movie&s="+movieName);
 			req.send();
 }
 
