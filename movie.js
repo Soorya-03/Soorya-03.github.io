@@ -3,7 +3,7 @@ let nominations = [];
 	Then, it generates HTML using the data recieved.
 */
 function getMovie(movieName){
-	req = new XMLHttpsRequest();
+	req = new XMLHttpRequest();
 			req.onreadystatechange = function() {
 				if(this.readyState==4 && this.status==200){
 					let result = JSON.parse(this.responseText);
@@ -36,7 +36,7 @@ function getMovie(movieName){
 					});
 				}
 			}
-			req.open("GET", "http://www.omdbapi.com/?apikey=2ff93414&type=movie&s="+movieName);
+			req.open("GET", "https://www.omdbapi.com/?apikey=2ff93414&type=movie&s="+movieName);
 			req.send();
 }
 
